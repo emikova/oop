@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.springdemo.Controllers.KlijentScena">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="50.0" prefWidth="1000.0" styleClass="nav-form" stylesheets="@dashboard.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="14.0" layoutY="9.0" text="👥" textFill="WHITE">
+                           <font>
+                              <Font name="Tahoma Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="66.0" layoutY="11.0" text="Travelling Agency" textFill="WHITE">
+                           <font>
+                              <Font name="Tahoma Bold" size="21.0" />
+                           </font></Label>
+                        <Button layoutX="1415.0" layoutY="9.0" mnemonicParsing="false" onAction="#close" prefHeight="30.0" prefWidth="70.0" styleClass="nav-bar-button" stylesheets="@dashboard.css" text="❌">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font></Button>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane prefHeight="549.6" prefWidth="200.0" styleClass="nav-form" stylesheets="@dashboard.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="76.0" layoutY="32.0" text="👤" textFill="WHITE">
+                                 <font>
+                                    <Font size="47.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="client_username" alignment="CENTER" layoutX="1.0" layoutY="138.0" prefHeight="19.0" prefWidth="198.0" text="janedoe" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tahoma" size="15.0" />
+                                 </font></Label>
+                              <Label fx:id="client_NameSurname" alignment="CENTER" layoutX="1.0" layoutY="167.0" prefHeight="20.0" prefWidth="199.0" text="JaneDoe" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="client_destinations_button" layoutX="1.0" layoutY="285.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" styleClass="nav-bar-button" stylesheets="@dashboard.css" text="Arrangements">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="14.0" />
+                                 </font></Button>
+                              <Line endX="44.199981689453125" endY="1.52587890625E-5" layoutX="134.0" layoutY="205.0" startX="-112.5999984741211" startY="1.52587890625E-5" stroke="WHITE" />
+                              <Button layoutX="14.0" layoutY="589.0" mnemonicParsing="false" onAction="#logout" styleClass="nav-bar-button" stylesheets="@dashboard.css" text="🚪" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font></Button>
+                              <Label layoutX="58.0" layoutY="612.0" text="Logout" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tahoma" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="52.0" layoutY="102.0" text="Welcome" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="reserved_button" layoutX="-2.0" layoutY="336.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" styleClass="nav-bar-button" stylesheets="@dashboard.css" text="Booked" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="client_home_button" layoutX="1.0" layoutY="236.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" styleClass="nav-bar-button" stylesheets="@dashboard.css" text="Home">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="cancelled_button" layoutX="-2.0" layoutY="386.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" styleClass="nav-bar-button" stylesheets="@dashboard.css" text="Cancelled" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="previous_button" layoutX="-2.0" layoutY="440.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" styleClass="nav-bar-button" stylesheets="@dashboard.css" text="Previous Arrangements" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="650.0" prefWidth="1285.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="all_destinations_frame" layoutX="16.0" layoutY="8.8" prefHeight="632.0" prefWidth="1278.0" stylesheets="@dashboard.css" visible="false" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="9.0">
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <children>
+                              <TableView fx:id="client_destinations_table" layoutX="3.0" prefHeight="406.0" prefWidth="562.0">
+                                <columns>
+                                  <TableColumn fx:id="cdt_id" prefWidth="34.4000244140625" text="ID" />
+                                  <TableColumn fx:id="cdt_name" prefWidth="84.79998779296875" text="Travel Name" />
+                                    <TableColumn fx:id="cdt_destination" prefWidth="79.20001220703125" text="Destination" />
+                                    <TableColumn fx:id="cdt_transportation" prefWidth="92.79998779296875" text="Transportation" />
+                                    <TableColumn fx:id="cdt_departure" prefWidth="95.20001220703125" text="Departure Date" />
+                                    <TableColumn fx:id="cdt_return" prefWidth="79.20001220703125" text="Return Date" />
+                                    <TableColumn fx:id="cdt_package_price" editable="false" prefWidth="92.79999389648435" text="Package Price" />
+                                </columns>
+                              </TableView>
+                              <Button layoutX="114.0" layoutY="498.0" mnemonicParsing="false" onAction="#bookDestination" prefHeight="30.0" prefWidth="180.0" styleClass="buttons" stylesheets="@dashboard.css" text="Book" />
+                              <TableView fx:id="accommodation_table" layoutX="566.0" prefHeight="407.0" prefWidth="450.0">
+                                <columns>
+                                  <TableColumn fx:id="at_accommodation_name" prefWidth="173.60003662109375" text="Accommodation Name" />
+                                  <TableColumn fx:id="at_room" prefWidth="117.60003662109375" text="Room Type" />
+                                    <TableColumn fx:id="at_price_per_night" prefWidth="95.20001220703125" text="Price Per Night" />
+                                    <TableColumn fx:id="at_rating" prefWidth="64.79998779296875" text="Rating" />
+                                </columns>
+                              </TableView>
+                              <Button fx:id="show_more_info" layoutX="750.0" layoutY="498.0" mnemonicParsing="false" onAction="#showMoreInfo" prefHeight="30.0" prefWidth="180.0" styleClass="buttons" stylesheets="@dashboard.css" text="Show More Info" />
+                              <AnchorPane layoutX="1024.0" layoutY="4.0" prefHeight="623.0" prefWidth="230.0" stylesheets="@dashboard.css">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <Button layoutX="37.0" layoutY="570.0" mnemonicParsing="false" onAction="#handleSortButton" prefHeight="30.0" prefWidth="180.0" styleClass="buttons" stylesheets="@dashboard.css" text="Filter" />
+                                    <ImageView fitHeight="116.0" fitWidth="223.0" layoutX="24.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@maps.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="40.0" layoutY="124.0" text="💵" textFill="#640071">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="21.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="money_sort" layoutX="40.0" layoutY="150.0" promptText="Enter money" />
+                                    <Label layoutX="40.0" layoutY="187.0" text="📅 1st date:" textFill="#640071">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="45.0" layoutY="246.0" text="📅 2nd date:" textFill="#640071">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="destination_sort" layoutX="40.0" layoutY="319.0" promptText="Destination name" />
+                                    <Label layoutX="41.0" layoutY="295.0" text="🏙" textFill="#640071">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="room_sort" layoutX="40.0" layoutY="369.0" promptText="Room type" />
+                                    <Label layoutX="41.0" layoutY="345.0" text="🛏" textFill="#640071">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="41.0" layoutY="407.0" text="🌠" textFill="#640071">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="rating_sort" layoutX="40.0" layoutY="431.0" promptText="Rating " />
+                                    <Label layoutX="40.0" layoutY="463.0" text="🚗 🚌 🚃 ✈" textFill="#640071">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="transportation_sort" layoutX="40.0" layoutY="487.0" promptText="Transportation type" />
+                                    <DatePicker fx:id="departure_sort" layoutX="40.0" layoutY="219.0" prefHeight="26.0" prefWidth="149.0" />
+                                    <DatePicker fx:id="return_sort" layoutX="40.0" layoutY="269.0" prefHeight="26.0" prefWidth="149.0" />
+                                 </children>
+                              </AnchorPane>
+                              <Button layoutX="441.0" layoutY="498.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="180.0" styleClass="buttons" stylesheets="@dashboard.css" text="Update" />
+                              <TextField fx:id="client_password_confirmation" layoutX="114.0" layoutY="455.0" />
+                              <Label layoutX="114.0" layoutY="424.0" text="Confirm Password:" textFill="#183e28">
+                                 <font>
+                                    <Font name="Tahoma" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="client_home" layoutX="25.0" layoutY="29.0" prefHeight="649.6" prefWidth="1298.4" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="19.0" layoutY="14.0" prefHeight="621.0" prefWidth="1259.0" stylesheets="@dashboard.css">
+                                 <children>
+                                    <AnchorPane layoutX="44.0" layoutY="41.0" prefHeight="200.0" prefWidth="429.0" styleClass="cards" stylesheets="@dashboard.css">
+                                       <children>
+                                          <Label layoutX="44.0" layoutY="27.0" text="Bank Account Balance" textFill="WHITE">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="23.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="69.0" text="💵" textFill="WHITE">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="82.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="client_balance_label" alignment="CENTER_RIGHT" layoutX="322.0" layoutY="129.0" prefHeight="44.0" prefWidth="160.0" text="0.0" textFill="WHITE">
+                                             <font>
+                                                <Font name="Tahoma" size="35.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <ImageView fitHeight="246.0" fitWidth="256.0" layoutX="356.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@banking.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="664.0" fitWidth="592.0" layoutX="636.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@public-transport-card-concept-illustration_114360-20152.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <AnchorPane layoutX="44.0" layoutY="275.0" prefHeight="137.0" prefWidth="278.0" styleClass="cards" stylesheets="@dashboard.css">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="86.0" text="💵" textFill="WHITE">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="38.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="52.0" layoutY="20.0" text="Spent Money" textFill="WHITE">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="client_spent_money" alignment="CENTER_RIGHT" layoutX="93.0" layoutY="95.0" prefHeight="30.0" prefWidth="166.0" text="0.0" textFill="WHITE">
+                                             <font>
+                                                <Font name="Tahoma" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="44.0" layoutY="424.0" prefHeight="137.0" prefWidth="278.0" styleClass="cards" stylesheets="@dashboard.css">
+                                       <children>
+                                          <Label layoutX="21.0" layoutY="79.0" text="💵" textFill="WHITE">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="38.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="59.0" layoutY="14.0" text="Debt" textFill="WHITE">
+                                             <font>
+                                                <Font name="Tahoma Bold" size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="client_debt" alignment="CENTER_RIGHT" layoutX="84.0" layoutY="90.0" prefHeight="30.0" prefWidth="174.0" text="0.0" textFill="WHITE">
+                                             <font>
+                                                <Font name="Tahoma" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="reserved_frame" layoutX="28.0" layoutY="22.0" prefHeight="610.0" prefWidth="1242.0" stylesheets="@dashboard.css" visible="false">
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <children>
+                              <TableView fx:id="booked_destinations_table" layoutX="37.0" layoutY="23.0" prefHeight="364.0" prefWidth="734.0">
+                                <columns>
+                                  <TableColumn fx:id="bt_name" prefWidth="98.39998626708984" text="Travel Name" />
+                                  <TableColumn fx:id="bt_destination" prefWidth="73.60000610351562" text="Destination" />
+                                    <TableColumn fx:id="bt_transportation" prefWidth="93.60000610351562" text="Transportation" />
+                                    <TableColumn fx:id="bt_departure" prefWidth="110.39996337890625" text="Departure Date" />
+                                    <TableColumn fx:id="bt_return" prefWidth="96.80001831054688" text="Return Date" />
+                                    <TableColumn fx:id="bt_package_price" prefWidth="102.4000244140625" text="Package Price" />
+                                    <TableColumn fx:id="bt_accommodation_id" prefWidth="155.19998779296873" text="Accommodation ID" />
+                                </columns>
+                              </TableView>
+                              <Button layoutX="135.0" layoutY="471.0" mnemonicParsing="false" onAction="#cancelDestination" prefHeight="30.0" prefWidth="180.0" styleClass="buttons" stylesheets="@dashboard.css" text="Cancel" />
+                              <AnchorPane layoutX="792.0" layoutY="17.0" prefHeight="577.0" prefWidth="434.0" stylesheets="@dashboard.css">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <ImageView fitHeight="321.0" fitWidth="409.0" layoutX="13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@camping-with-caravan_23-2148657945.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="218.0" fitWidth="391.0" layoutX="30.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@minivan.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                              <Button layoutX="520.0" layoutY="471.0" mnemonicParsing="false" onAction="#payOtherHalf" prefHeight="30.0" prefWidth="180.0" styleClass="buttons" stylesheets="@dashboard.css" text="Pay The Other Half " />
+                              <Label fx:id="cancel_message" layoutX="37.0" layoutY="402.0" text="You can't cancel selected destination, it's too late for that!" textFill="RED" visible="false">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="warning" layoutX="37.0" layoutY="554.0" prefHeight="18.0" prefWidth="571.0" text="hello" textFill="RED" visible="false">
+                                 <font>
+                                    <Font name="Tahoma" size="22.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="cancelled_frame" layoutX="28.0" layoutY="22.0" prefHeight="607.0" prefWidth="1242.0" stylesheets="@dashboard.css" visible="false">
+                           <children>
+                              <TableView fx:id="cancelled_destinations_table" layoutX="39.0" layoutY="14.0" prefHeight="364.0" prefWidth="734.0">
+                                 <columns>
+                                    <TableColumn fx:id="ct_name" prefWidth="98.39998626708984" text="Travel Name" />
+                                    <TableColumn fx:id="ct_destination" prefWidth="73.60000610351562" text="Destination" />
+                                    <TableColumn fx:id="ct_transportation" prefWidth="93.60000610351562" text="Transportation" />
+                                    <TableColumn fx:id="ct_departure" prefWidth="110.39996337890625" text="Departure Date" />
+                                    <TableColumn fx:id="ct_return" prefWidth="96.80001831054688" text="Return Date" />
+                                    <TableColumn fx:id="ct_package_price" prefWidth="102.4000244140625" text="Package Price" />
+                                    <TableColumn fx:id="ct_accommodation_id" prefWidth="155.19998779296873" text="Accommodation ID" />
+                                 </columns>
+                              </TableView>
+                              <Button layoutX="111.0" layoutY="473.0" mnemonicParsing="false" onAction="#bookDestinationBack" prefHeight="30.0" prefWidth="180.0" styleClass="buttons" stylesheets="@dashboard.css" text="Book Arrangement" />
+                              <AnchorPane layoutX="796.0" layoutY="14.0" prefHeight="580.0" prefWidth="430.0" stylesheets="@dashboard.css">
+                                 <children>
+                                    <ImageView fitHeight="311.0" fitWidth="334.0" layoutX="60.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@campingoutdoors.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="230.0" fitWidth="384.0" layoutX="26.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@tourists.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </AnchorPane>
+                           </children>
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </AnchorPane>
+                        <AnchorPane fx:id="previous_frame" layoutX="28.0" layoutY="22.0" prefHeight="607.0" prefWidth="1242.0" stylesheets="@dashboard.css" visible="false">
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <children>
+                              <TableView fx:id="previous_table" layoutX="101.0" layoutY="100.0" prefHeight="406.0" prefWidth="1040.0">
+                                 <columns>
+                                    <TableColumn fx:id="pt_id" prefWidth="34.4000244140625" text="ID" />
+                                    <TableColumn fx:id="pt_name" prefWidth="158.4000244140625" text="Travel Name" />
+                                    <TableColumn fx:id="pt_destination" prefWidth="135.99996948242188" text="Destination" />
+                                    <TableColumn fx:id="pt_transportation" prefWidth="150.40005493164062" text="Transportation" />
+                                    <TableColumn fx:id="pt_departure" prefWidth="172.0" text="Departure Date" />
+                                    <TableColumn fx:id="pt_return" prefWidth="226.39990234375" text="Return Date" />
+                                    <TableColumn fx:id="pt_package_price" editable="false" prefWidth="162.39996337890625" text="Package Price" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="welcome_frame" layoutX="28.0" layoutY="22.0" prefHeight="606.0" prefWidth="1242.0" stylesheets="@dashboard.css">
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <children>
+                              <Label layoutX="55.0" layoutY="53.0" text="WELCOME" textFill="#ee00ff">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="58.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="278.0" fitWidth="560.0" layoutX="780.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@maps.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="210.0" fitWidth="329.0" layoutX="14.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@camping-with-caravan_23-2148657945.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="232.0" fitWidth="371.0" layoutX="31.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@minivan.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="325.0" fitWidth="537.0" layoutX="351.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@campingoutdoors.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="267.0" fitWidth="542.0" layoutX="608.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@tourists.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

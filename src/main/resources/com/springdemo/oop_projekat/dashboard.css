@@ -1,0 +1,95 @@
+.nav-bar-button {
+    -fx-background-color: linear-gradient(to bottom right, #9900cc,#330033);
+    -fx-text-fill: white;
+    -fx-transition: background-color 0.3s;
+}
+
+.nav-bar-button:hover {
+    -fx-background-color: white;
+    -fx-text-fill:#330033;
+    -fx-border-color:linear-gradient(to bottom right, #330033,#9900cc);
+}
+/*
+.text-field{
+    /*-fx-border-color:linear-gradient(to bottom right, #9900cc, #330033);
+    -fx-text-fill: #9900cc;
+    -fx-border-color: #330033;
+}*/
+
+.text-field-shadow{
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.1), 6,0,0,0);
+
+}
+
+.buttons{
+    -fx-background-color: linear-gradient(to bottom right, #9900cc,#cc33ff);
+    -fx-text-fill: white;
+    -fx-transition: background-color 0.3s;
+}
+
+.buttons:hover{
+    -fx-background-color: white;
+    -fx-text-fill:  #990099;
+    -fx-border-color: linear-gradient(to bottom right, #9900cc,#990099);
+}
+
+
+.white-bg{
+    -fx-background-color: #fff;
+    -fx-background-radius: 8px;
+}
+
+.shadow{
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.5), 6,0,0,0);
+}
+
+.nav-form{
+    -fx-background-color: linear-gradient(to bottom right,  #9900cc, #330033);
+}
+
+.cards{
+    -fx-background-color: linear-gradient(to bottom right, #cc33ff,#1a001a);
+    -fx-background-radius: 8px;
+}
+
+.table{
+    -fx-border-color:linear-gradient(to bottom right, #00cca2,#010401);
+}
+
+.destination{
+    -fx-background-color: #ffe6ff;
+
+}
+
+.signupButton{
+    -fx-border-color: linear-gradient(to bottom right, #306e4f,#010401);
+    -fx-text-fill: #306e4f ;
+    -fx-transition: background-color 0.3s;
+}
+.signupButton:hover{
+    -fx-background-color: #306e4f;
+    -fx-text-fill: white;
+
+}
+
+.client_view{
+    -fx-background-color: linear-gradient(to bottom right, #006667, #010401);
+
+}
+
+.client-button{
+    -fx-background-color: linear-gradient(to bottom right, #006667, #010401);
+    -fx-text-fill: white;
+    -fx-border-color: linear-gradient(to bottom right, #006667, #010401);
+}
+
+.client-button:hover{
+    -fx-background-color: white;
+    -fx-border-color: linear-gradient(to bottom right, #006667, #010401);
+    -fx-text-fill:#006667 ;
+}
+
+.client-cards{
+    -fx-background-color: linear-gradient(to bottom right, #006667, #010401);
+    -fx-background-radius: 8px;
+}

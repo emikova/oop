@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.springdemo.Controllers.Signup">
+   <children>
+      <Label layoutX="335.0" layoutY="34.0" prefHeight="18.0" prefWidth="67.0" text="Name:" textFill="#9e08a9">
+         <font>
+            <Font name="Gadugi Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="signupName" layoutX="336.0" layoutY="56.0">
+         <font>
+            <Font name="Gadugi" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="335.0" layoutY="94.0" text="Surname:" textFill="#9e08a9">
+         <font>
+            <Font name="Gadugi Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="signupSurname" layoutX="336.0" layoutY="120.0">
+         <font>
+            <Font name="Gadugi" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="333.0" layoutY="161.0" text="Phone Number:" textFill="#9e08a9">
+         <font>
+            <Font name="Gadugi Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="signupPhoneNumber" layoutX="336.0" layoutY="187.0">
+         <font>
+            <Font name="Gadugi" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="333.0" layoutY="223.0" text="Social Security Number:" textFill="#9e08a9">
+         <font>
+            <Font name="Gadugi Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="signupJMBG" layoutX="336.0" layoutY="251.0">
+         <font>
+            <Font name="Gadugi" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="333.0" layoutY="289.0" text="Account Number:" textFill="#9e08a9">
+         <font>
+            <Font name="Gadugi Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="signupAccountNumber" layoutX="336.0" layoutY="315.0">
+         <font>
+            <Font name="Gadugi" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="333.0" layoutY="357.0" text="Username:" textFill="#9e08a9">
+         <font>
+            <Font name="Gadugi Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="signupUsername" layoutX="336.0" layoutY="383.0">
+         <font>
+            <Font name="Gadugi" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="333.0" layoutY="420.0" text="Password:" textFill="#9e08a9">
+         <font>
+            <Font name="Gadugi Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="336.0" layoutY="484.0" text="Confirm Password:" textFill="#9e08a9">
+         <font>
+            <Font name="Gadugi Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="368.0" layoutY="571.0" mnemonicParsing="false" onAction="#vratiNaPrvuScenu" opacity="0.75" prefHeight="30.0" prefWidth="99.0" styleClass="buttons" stylesheets="@dashboard.css" text="Sign In" textFill="#1f7361">
+         <font>
+            <Font name="Gadugi Bold" size="14.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="signupPassword" layoutX="334.0" layoutY="446.0" prefHeight="30.0" prefWidth="174.0">
+         <font>
+            <Font name="Gadugi" size="10.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="signupConfirmPassword" layoutX="334.0" layoutY="510.0" prefHeight="30.0" prefWidth="174.0">
+         <font>
+            <Font name="Gadugi" size="10.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="signupNameLabel" layoutX="516.0" layoutY="62.0" prefHeight="20.0" prefWidth="167.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="signupSurnameLabel" layoutX="516.0" layoutY="126.0" prefHeight="20.0" prefWidth="167.0">
+         <font>
+            <Font name="Gadugi" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="signupPhoneNumberLabel" layoutX="516.0" layoutY="192.0" prefHeight="18.0" prefWidth="167.0">
+         <font>
+            <Font name="Gadugi" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="signupJMBGLabel" layoutX="516.0" layoutY="257.0" prefHeight="18.0" prefWidth="167.0">
+         <font>
+            <Font name="Gadugi" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="signupAccountNumberLabel" layoutX="516.0" layoutY="321.0" prefHeight="18.0" prefWidth="167.0">
+         <font>
+            <Font name="Gadugi" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="signupUsernameLabel" layoutX="516.0" layoutY="389.0" prefHeight="18.0" prefWidth="167.0">
+         <font>
+            <Font name="Gadugi" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="signupPasswordLabel" layoutX="516.0" layoutY="452.0" prefHeight="18.0" prefWidth="167.0">
+         <font>
+            <Font name="Gadugi" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="signupConfirmPasswordLabel" layoutX="516.0" layoutY="516.0" prefHeight="20.0" prefWidth="167.0">
+         <font>
+            <Font name="Gadugi" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="accountExistsLabel" layoutX="299.0" layoutY="659.0" prefHeight="20.0" prefWidth="383.0">
+         <font>
+            <Font name="Gadugi" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="754.0" fitWidth="458.0" layoutX="-126.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Purple%20aesthetic%20wallpaper.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="654.0" layoutY="656.0" mnemonicParsing="false" onAction="#back" styleClass="buttons" stylesheets="@dashboard.css" text="⬅" />
+   </children>
+</AnchorPane>
